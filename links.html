@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="perrochoto.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>links | jaki.uy</title>
+    <link rel="stylesheet" href="links.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <i id="musicIcon" onclick="toggleMusic()" class="fas fa-music"></i>
+    <i id="musicIconMute" onclick="toggleMusic()" class="fas fa-volume-mute"></i>
+    <audio id="backgroundMusic" loop>
+      <source src="buu.mp3" type="audio/mpeg">
+    </audio>
+    <div class="switch">
+        <input type="checkbox" id="switch-1">
+        <label for="switch-1"></label>
+      </div>
+      <div class="mobile-space"></div>
+
+    <main class="main-content">
+        <header class="header-menu">
+
+            <img class="header-menu__background" src="https://i.pinimg.com/originals/5e/57/9d/5e579dcc53215878b96f1eb4f811ba6f.gif" alt="background">
+
+            <img class="header-menu__profile" src="https://i.pinimg.com/originals/b4/77/d5/b477d5a9a52472fb3e3f42c7f76ff1b0.gif" alt="pfp">    
+
+            <h1 class="header-menu__name">@jakineru</h1>
+
+            <span class="header-menu__pro">máquina mercantil de enfermedades mentales</span>
+        </header>
+
+        <section class="links">
+            <a href="https://youtube.com/@jakineru/videos" target="_blank">
+                <i class="fab fa-youtube"></i>
+                lugar donde hago videos
+            </a>
+
+            <a href="https://twitch.tv/jakineru" target="_blank">
+                <i class="fab fa-twitch"></i>
+                a veces hago directos
+            </a>
+            
+                <div id="videoContainer"></div>
+
+            <div class="projects">
+
+                <hr>
+                <p>boludeces</p>
+                <a href="https://instagram.com/jakineru" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    lugar donde doy asco
+                </a>
+                <a href="https://wa.me/+59898627635" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    wsp
+                </a>
+                </a>
+                <a href="https://discord.gg/WYnhvwUD" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    discord (friend req)
+                </a>
+
+            </div>
+
+            <div class="projects">
+
+                <hr>
+                <p>extra</p>
+                    <a href="#" id="open-modal">
+                        <i class="fas fa-pen"></i>
+                        abrir legal (privacidad)
+                    </a>
+                
+            </div>
+
+        </section>   
+
+        <dialog id="modal">
+            <h2>privacidad</h2>
+            <p>
+                En www.jaki.uy, se usan herramientas de análisis que permiten mejorar el servicio y la funcionalidad del sitio. Estos métodos incluyen recopilar datos anónimos, como direcciones IP, para mejorar la seguridad y adaptar el contenido de manera más efectiva. Queremos asegurarte que protegemos tu privacidad y cumplimos con todas las regulaciones pertinentes para el manejo responsable de la información recopilada.
+                </p>
+                <p>
+            </p>
+            <p>
+
+            </p>
+            <h3>
+              atte:
+            </h3>
+            <div class="tec_icons">
+              <img alt="HTML"src="https://media.discordapp.net/attachments/1043521618166698075/1122048360258490439/Hi.gif">
+            </div>
+              <button id="close-modal">
+                  <i class="fas fa-times"></i>
+              </button>
+          </dialog>
+
+        <footer class="footer-menu">
+            <p>
+            </p>
+            <span>
+                contacto directo: <a class="correo" href="mailto:contacto@jaki.uy">contacto@jaki.uy</a>
+            </span>
+            <p>
+                <i class="fas fa-envelope"></i>
+            </p>
+        </div>
+        </footer>
+    </main>
+    <script src="./links.js"></script>
+    <script>
+        console.log(`
+        _ _
+    _(,_/ \\ \\____________
+    |\`. \\_@_@   \`.     ,'
+    |\\ \\ .        \`-,'
+    || |  \`-.____,-'
+    || /  /
+    |/ |  |                             jakineru
+    \`..     /   \\
+    \\\\   /    |
+    ||  |      \\
+    \\\\ /-.    |
+    ||/  /_   |
+    jk \\(_____)-'_)
+     `);
+    </script>
+    <div id="cookies"></div>
+    <script src="func/cookies1.js"></script>
+</body>
+</html>
