@@ -19,5 +19,5 @@
 
 [[redirects]]
   from = "/"
-  to = "ultimo-video/ultimo-video.html"
+  to = "video/index.html"
   status = 200
