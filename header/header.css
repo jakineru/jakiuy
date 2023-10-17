@@ -1,4 +1,3 @@
-/* Estilos básicos */
 body {
     margin: 0;
     padding: 0;
@@ -17,14 +16,14 @@ body {
     width: 100%;
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 10px solid #fff; /* Borde izquierdo */
-    border-right: 10px solid #fff; /* Borde derecho */
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
 }
 
 .menu img {
     max-height: 40px;
-    border-radius: 10px; /* Bordes redondeados */
-    margin-left: 25px; /* Espaciado entre el logo y el texto */
+    border-radius: 10px;
+    margin-left: 25px; 
 }
 
 .menu-toggle {
@@ -56,13 +55,12 @@ body {
 .menu-items a {
     text-decoration: none;
     color: #fff;
-    padding: 10px; /* Espaciado interior aumentado */
+    padding: 10px; 
     transition: 0.3s;
     border-radius: 5px;
     border: 2px solid transparent;
 }
 
-/* Estilos para el menú desplegable */
 .submenu {
     display: none;
     position: absolute;
@@ -73,14 +71,14 @@ body {
     padding: 10px;
     border-top: 2px solid #1a1a1a;
     opacity: 0;
-    transform: translateY(-10px); /* Inicialmente, desplazar hacia arriba */
-    transition: transform 0.3s; /* Agrega una transición para el desplazamiento */
+    transform: translateY(-10px); 
+    transition: transform 0.3s;
 }
 
 .menu-items li:hover .submenu {
     display: block;
-    opacity: 1; /* Hacer el submenú completamente visible */
-    transform: translateY(0); /* Desplazar hacia abajo al mostrar */
+    opacity: 1; 
+    transform: translateY(0);
 }
 
 .submenu li {
@@ -104,13 +102,11 @@ body {
     background-color: #555;
 }
 
-/* adsasdasdasdasdasdasdasdasdasdasadaasdasadaasdasadaas */
 
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
         margin-right: 15px; 
-        /*border-left: 3px solid #fff; */
     }
 
     .menu-items {
