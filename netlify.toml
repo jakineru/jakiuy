@@ -9,10 +9,15 @@
 
 [[redirects]]
   from = "/links"
-  to = "/links.html"
+  to = "links/links.html"
   status = 200
 
 [[redirects]]
   from = "/mute"
-  to = "/speak.html"
+  to = "speak/speak.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "ultimo-video/ultimo-video.html"
   status = 200

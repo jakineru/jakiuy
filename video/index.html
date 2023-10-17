@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wlc | jaki.uy</title>
+  <link rel="shortcut icon" href="perrochoto.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style src="../css/header.css"></style>
+  <link rel="stylesheet" type="text/css" href="video.css">
+<body>
+
+  <nav class="menu">
+    <div class="logo">
+        <img src="../perrochoto.png" href="https://jaki.uy/" alt="jakineru">
+    </div>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="menu-items">
+        <li>
+            <a href="#">ㅤ@jakineruㅤ</a>
+            <ul class="submenu">
+                <li><a href="https://jaki.uy" onclick="window.open(this.href); return false;"">• video.html</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">mis creaciones(?</a>
+            <ul class="submenu">
+              <li><a href="https://instagram.com/quesopost" onclick="window.open(this.href); return false;">• ig; @quesopost</a></li>
+                <li><a href="https://trucoteca.jaki.uy" onclick="window.open(this.href); return false;">• trucoteca.html</a></li>
+                <li><a href="https://gatosgatos.jaki.uy" onclick="window.open(this.href); return false;">• gatosgatos.html</a></li>            
+              </ul>
+        </li>
+        <li>
+            <a href="#">gone</a>
+            <ul class="submenu">
+                <li><a href="https://johnisdead.com/gone/">john</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href=""></a>
+          <ul class="submenu">
+          </ul>
+      </li>
+    </ul>
+</nav>
+
+<script src="../header/header.js"></script>
+<link rel="stylesheet" type="text/css" href="../header/header.css">
+
+  <div class="video-container">
+    <iframe id="latest-long-video" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="channel-name">
+    jakineru<br>
+    <a href="mailto:contacto@jaki.uy" style="color: white; text-decoration: none;" onmouseover="this.style.color='violet'" onmouseout="this.style.color='white'">contacto@jaki.uy</a>
+
+  </div>
+
+  <div id="cookies"></div>
+  <script src="func/cookies1.js"></script>
+  <script>
+    var channelID = "UCS5hUS5m5wKNFkAY77WsEVA";
+    var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL) + channelID)
+      .then(response => response.json())
+      .then(data => {
+        var latestLongVideo = data.items.find(item => !item.title.toLowerCase().includes("shorts"));
+        var latestLongVideoLink = latestLongVideo.link;
+        var latestLongVideoID = latestLongVideoLink.substr(latestLongVideoLink.indexOf("=") + 1);
+        document.getElementById("latest-long-video").src = "https://youtube.com/embed/" + latestLongVideoID + "?autoplay=1";
+      });
+  </script>
+
+  <script>
+    console.log(`
+    _ _
+_(,_/ \\ \\____________
+|\`. \\_@_@   \`.     ,'
+|\\ \\ .        \`-,'
+|| |  \`-.____,-'
+|| /  /
+|/ |  |                             jakineru
+\`..     /   \\
+\\\\   /    |
+||  |      \\
+\\\\ /-.    |
+||/  /_   |
+jk \\(_____)-'_)
+ `);
+</script>
+<script src="func/cookies1.js"></script>
+</body>
+</html>
