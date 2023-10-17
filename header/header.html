@@ -1,26 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
-    <title>Barra de Menú</title>
-</head>
-<body>
+    <title>debug header </title>
+    <link rel="shortcut icon" href="perrochoto.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  
     <nav class="menu">
-        <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="menu-items">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <script src="header.js"></script>
-</body>
-</html>
+      <div class="logo">
+          <img src="../perrochoto.png" href="https://jaki.uy/" alt="jakineru">
+      </div>
+      <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="menu-items">
+          <li>
+              <a href="#">ㅤ@jakineruㅤ</a>
+              <ul class="submenu">
+                  <li><a href="https://jaki.uy" onclick="window.open(this.href); return false;"">· video.html</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">mis creaciones(?</a>
+              <ul class="submenu">
+                <li><a href="https://instagram.com/quesopost" onclick="window.open(this.href); return false;">· @quesopost</a></li>
+                  <li><a href="https://trucoteca.jaki.uy" onclick="window.open(this.href); return false;">· trucoteca.html</a></li>
+                  <li><a href="https://gatosgatos.jaki.uy" onclick="window.open(this.href); return false;">· gatosgatos.html</a></li>            
+                </ul>
+          </li>
+          <li>
+              <a href="#">adiós</a>
+              <ul class="submenu">
+                  <li><a href="https://johnisdead.com/gone/">fr.txt</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href=""></a>
+            <ul class="submenu">
+            </ul>
+        </li>
+      </ul>
+  </nav>
+
+<script src="../header/header.js"></script>
+<link rel="stylesheet" type="text/css" href="../header/header.css">
+<link rel="stylesheet" type="text/css" href="../video/video.css">
