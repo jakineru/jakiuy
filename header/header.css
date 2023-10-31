@@ -85,6 +85,14 @@ body {
     margin: 10px 0;
 }
 
+.menu-items li:hover .submenu {
+    /* Agregué una animación para que el submenu aparezca con un efecto de deslizamiento */
+    display:block; 
+    animation-name :slide-in; 
+    animation-duration :0.4s; 
+    animation-fill-mode :forwards; 
+ }
+
 .submenu a {
     color: #fff;
     border: none;
@@ -153,3 +161,15 @@ body {
     }
     
 }
+
+/* Definí las animaciones para el submenu */
+
+@keyframes slide-in {
+    from {opacity :0 ; transform :translateY(-20%); }
+    to {opacity :1 ; transform :translateY(0%); }
+ }
+ 
+ @keyframes slide-in-mobile {
+    from {opacity :0 ; transform :translateX(-20%); }
+    to {opacity :1 ; transform :translateX(0%); }
+ }
