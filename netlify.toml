@@ -20,7 +20,7 @@
 [[redirects]]
   from = "/"
   to = "https://ayo.so/jaki"
-  status = 200
+  status = 301
 
 [[redirects]]
   from = "/queso"
