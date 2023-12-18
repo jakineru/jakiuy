@@ -2,7 +2,7 @@ let container = document.getElementById('particles-js');
 particlesJS('particles-js', {
     'particles': {
         'number': {
-            'value': 25,
+            'value': 40,
             'density': {
                 'enable': true,
                 'value_area': 300
@@ -17,7 +17,7 @@ particlesJS('particles-js', {
             'random': true,
         },
         'size': {
-            'value': 1,
+            'value': 3,
             'random': true,
         },
         'line_linked': {
