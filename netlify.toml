@@ -1,20 +1,9 @@
-[[redirects]]
-  from = "/yt"
-  to = "https://yt.jaki.uy"
-  status = 301
-  force = true
-
 [build]
   functions = "func"
 
 [[redirects]]
   from = "/links"
   to = "links/links.html"
-  status = 200
-
-[[redirects]]
-  from = "/mute"
-  to = "speak/speak.html"
   status = 200
 
 [[redirects]]
