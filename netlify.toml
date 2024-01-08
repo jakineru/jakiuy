@@ -7,6 +7,11 @@
   status = 200
 
 [[redirects]]
+  from = "/yt"
+  to = "https://youtube.com/@jakineru"
+  status = 301
+
+[[redirects]]
   from = "/"
   to = "https://ayo.so/jaki"
   status = 301
