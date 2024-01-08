@@ -12,6 +12,12 @@
   status = 301
 
 [[redirects]]
+  from = "yt.jaki.uy/*"
+  to = "https://youtube.com/@jakineru"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/"
   to = "https://ayo.so/jaki"
   status = 301
