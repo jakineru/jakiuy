@@ -15,7 +15,7 @@
   from = "yt.jaki.uy/*"
   to = "https://youtube.com/@jakineru"
   status = 301
-  force = tru
+  force = true
 
 [[redirects]]
   from = "jaki.uy/donar"
