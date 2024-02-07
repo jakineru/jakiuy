@@ -24,11 +24,6 @@
   force = true
 
 [[redirects]]
-  from = "/"
-  to = "index.html"
-  status = 301
-
-[[redirects]]
   from = "/queso"
   to = "queso/queso.html"
   status = 200
