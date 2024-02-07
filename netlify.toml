@@ -25,7 +25,7 @@
 
 [[redirects]]
   from = "/"
-  to = "https://ayo.so/jaki"
+  to = "index.html"
   status = 301
 
 [[redirects]]
