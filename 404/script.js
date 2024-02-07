@@ -8,7 +8,7 @@ particlesJS('particles-js', {
                 'value_area': 300
             }
         },
-        'color': {value: ['#01ff27', '#ff0105', '#ffffff']},
+        'color': {value: ['#42f54b', '#005404', '#ffffff']},
         'shape': {
             'type': 'star',
         },
