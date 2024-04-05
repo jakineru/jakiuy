@@ -49,3 +49,9 @@
   to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/sp"
+  to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
+  status = 301
+  force = true
