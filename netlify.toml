@@ -50,6 +50,11 @@
   status = 404
 
 [[redirects]]
+  from = "/*"
+  to = "https://jaki.uy"
+  status = 301  
+
+[[redirects]]
   from = "/sp"
   to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
   status = 301
