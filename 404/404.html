@@ -1,51 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404 / jaki.uy</title>
-    <link rel="shortcut icon" href=../src/img/favicon.png>
-    <link rel="stylesheet" href="../404/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('../src/img/cielo1.webp');
+            background-size: cover; 
+            background-position: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            transition: background-image 2s ease; 
+        }
+        #container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #imagen {
+            opacity: 0;
+            transition: opacity 2s ease-in-out; 
+            animation: vibing 5s linear infinite alternate; 
+            max-width: 80%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+        }
+        #texto {
+            display: none; 
+            font-size: 36px;
+            font-family: 'Cinzel Decorative', sans-serif;
+            text-align: center;
+            white-space: pre-line; 
+            overflow: hidden;
+            border-right: .15em solid rgb(38, 0, 255); 
+            max-width: 80%;
+            margin-top: 20px; 
+            position: absolute;
+            bottom: 190px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #imagen {
+                max-width: 90%; 
+                max-height: 300px;
+                top: 40%;
+                left: 54%;
+            }
+            #texto {
+                font-size: 28px;
+                max-width: 90%; 
+                bottom: 210px;
+            }
+        }
+        @keyframes vibing {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-52%, -50%) rotate(5deg); }
+        }
+    </style>
+
 </head>
+<body onclick="startAnimation()">
+    <audio id="audio1" src="../src/angel.mp3"></audio>
+    <audio id="audio2" src="../src/talk.mp3"></audio>
+    <div id="container">
+        <img id="imagen" src="../src/img/wings1.png" style="height: 400px; width: auto;">
+        <div id="texto"></div>
+    </div> 
+    <script type="text/javascript">
+        var animationStarted = false;
 
-<body>
-<div id="particles-js">
-    <canvas class="particles-js-canvas-el"></canvas>
-</div>
+        function startAnimation() {
+            if (!animationStarted) { 
+                var audio1 = document.getElementById("audio1");
+                var audio2 = document.getElementById("audio2");
+                var imagen = document.getElementById("imagen");
+                var texto = document.getElementById("texto");
+                
+                animationStarted = true;
 
-<div class="container">
-    <div id="text" class="text">
-        <div class="text-404">
-            <h1>🌳</h1>
-            <h1>🌳</h1>
-            <h1>🦌</h1>
-            <h1>🌳</h1>
-        </div>
-        <p>te has perdido en el bosque, esta página no existe</p>
-        <a href="https://jaki.uy" class="btn">www.jaki.uy</a>
-    </div>
-</div>
-<script type="text/javascript" src="../404/particles.min.js"></script>
-<script src="../func/cookies1.js"></script>
-  <script>
-    console.log(`
-    _ _
-_(,_/ \\ \\____________
-|\`. \\_@_@   \`.     ,'
-|\\ \\ .        \`-,'
-|| |  \`-.____,-'
-|| /  /
-|/ |  |                             jakineru
-\`..     /   \\
-\\\\   /    |
-||  |      \\
-\\\\ /-.    |
-||/  /_   |
-jk \\(_____)-'_)
- `);
-</script>
-<script type="text/javascript" src="../404/script.js"></script>
+                setTimeout(function() {
+                    texto.style.display = 'block';
+                    audio2.play();
+                    typeWriter(texto, textoContent); 
+                    document.body.style.backgroundImage = 'url("../src/img/cielo2.png")'; 
+                }, 0); 
+
+                audio1.play();
+                audio1.addEventListener('ended', function() {
+                    //audio2.play();
+                });
+
+                setTimeout(function() {
+                    imagen.style.opacity = 1;
+                }, 0);
+    
+        setTimeout(function() {
+                    window.location.href = "https://jaki.uy";
+                }, 30000);
+            }
+        }
+
+
+        var textoContent = "te has perdido, esta página no existe.";
+
+        function typeWriter(element, text) {
+            var i = 0;
+            var speed = 80;
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    element.style.borderRight = 'none';
+                }
+            }
+            type();
+        }
+    </script>
 </body>
 </html>
