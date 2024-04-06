@@ -12,6 +12,11 @@
   status = 301
 
 [[redirects]]
+  from = "/spty"
+  to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
+  status = 301
+
+[[redirects]]
   from = "yt.jaki.uy/*"
   to = "https://youtube.com/@jakineru"
   status = 301
@@ -43,12 +48,6 @@
   from = "/*"
   to = "404/404.html"
   status = 404
-
-[[redirects]]
-  from = "/spty"
-  to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/sp"
