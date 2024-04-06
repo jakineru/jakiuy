@@ -24,6 +24,12 @@
   force = true
 
 [[redirects]]
+  from = "/pay"
+  to = "https://paypal.me/jaki616"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/queso"
   to = "queso/queso.html"
   status = 200
@@ -37,3 +43,15 @@
   from = "/*"
   to = "404/404.html"
   status = 404
+
+[[redirects]]
+  from = "/spty"
+  to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sp"
+  to = "https://open.spotify.com/playlist/1Delr3lDNT6L7siZT6pqzH"
+  status = 301
+  force = true
