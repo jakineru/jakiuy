@@ -294,3 +294,39 @@ html {
         transform: scale(1.2);
     }
 }
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .profile-content {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .profile-info {
+        margin-bottom: 20px;
+    }
+
+    .profile-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .details-info {
+        text-align: center;
+    }
+
+    .links-block img {
+        width: 50px;
+    }
+}

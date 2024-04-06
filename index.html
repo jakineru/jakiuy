@@ -1,37 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <meta name=description content=zeyn • social tab>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zeyn • social tab">
     <title>www.jaki.uy</title>
-    <link rel="shortcut icon" href=src/img/favicon.png>
-    <link rel=stylesheet href=src/css/style.css>
-    <link rel=stylesheet href=src/mouse-animate/main.css>
-    <script src=src/mouse-animate/main.js></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-d6Dgoxz0f9THVb+8r/+MUUmoA/wGzv1z4L1uM09gCzZIYpkhYqOdXtnYG6YRYoGr2qAwn5uoCw/v9e+o9I9g==
-crossorigin="anonymous" />
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/mouse-animate/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-d6Dgoxz0f9THVb+8r/+MUUmoA/wGzv1z4L1uM09gCzZIYpkhYqOdXtnYG6YRYoGr2qAwn5uoCw/v9e+o9I9g=="
+        crossorigin="anonymous" />
 </head>
-
 <body>
-    <div id=loading-screen><svg class=spinner viewBox="0 0 50 50"><circle class=path cx=25 cy=25 r=20 fill=none stroke-width=5></circle></svg></div>
-    <div class=wrap rel=preload>
-      <div class=main-block>
-        <div class="profile unselectable">
-            <div class="profile-banner unselectable"></div>
-            <iframe src="perfil.html" width="410" height="210" frameborder="0"></iframe>
-        </div>
-        
-            <div class=social-tab>
-               <div class=links-block>
-                <a target=_blank href=https://youtube.com/@jakineru><img src="src/img/social/youtube.png" class="unselectable logo-yt"></a>
-                    <a target=_blank href=https://instagram.com/jakineru><img src=src/img/social/instagram.png class=unselectable></a>
-                    <a target=_blank href=https://open.spotify.com/user/31y3xiphzr5kutq7ztvqb2mg5yui><img src=src/img/social/spotify.png class=unselectable></a>
+    <div id="loading-screen">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+    <div class="wrap" rel="preload">
+        <div class="main-block">
+            <div class="profile unselectable">
+                <div class="profile-banner unselectable"></div>
+                <iframe src="perfil.html" height="210" width="500" frameborder="0"></iframe>
+            </div>
+            <div class="social-tab">
+                <div class="links-block">
+                    <a target="_blank" href="https://youtube.com/@jakineru"><img src="src/img/social/youtube.png" class="unselectable logo-yt" style="width: 40px;"></a>
+                    <a target="_blank" href="https://instagram.com/jakineru"><img src="src/img/social/instagram.png" class="unselectable" style="width: 40px;"></a>
+                    <a target="_blank" href="https://open.spotify.com/user/31y3xiphzr5kutq7ztvqb2mg5yui"><img src="src/img/social/spotify.png" class="unselectable" style="width: 40px;"></a>
                 </div>
             </div>
         </div>
     </div>
-    <script src=src/js/jquery-3.6.0.js></script>
-    <script src=src/js/loading.js></script>
+    <script src="src/js/jquery-3.6.0.js"></script>
+    <script src="src/js/loading.js"></script>
     <script>
         document.addEventListener('keydown', function() {
             var audio = new Audio('src/lol.mp3');
@@ -63,5 +65,5 @@ crossorigin="anonymous" />
     </script>
     <div id="cookies"></div>
     <script src="func/cookies1.js"></script>
-
-
+</body>
+</html>
