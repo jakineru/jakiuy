@@ -1,4 +1,6 @@
 ## código fuente de https://jakineru.netlify.app/
+![lang](https://github-readme-stats.vercel.app/api/top-langs/?username=jakineru&layout=compact&theme=radical)
+
 
 # linktree 
 links por categorías + música + tema claro/oscuro
@@ -10,9 +12,6 @@ https://jakineru.netlify.app/links
 https://jakineru.netlify.app/404 
 
 <img src="src/img/404.jpg" alt="404" width="300">
-
-
-![lang](https://github-readme-stats.vercel.app/api/top-langs/?username=jakineru&layout=compact&theme=radical)
 
 ```
         _ _
