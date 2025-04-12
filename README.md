@@ -4,12 +4,12 @@
 
 # linktree 
 links por categorías + música + tema claro/oscuro
-https://jakineru.netlify.app/links 
+### https://jakineru.netlify.app/links 
 
 <img src="src/img/linktree.jpg" alt="links" width="300">
 
 # 404
-https://jakineru.netlify.app/404 
+#### https://jakineru.netlify.app/404 
 
 <img src="src/img/404.jpg" alt="404" width="300">
 
